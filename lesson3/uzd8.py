@@ -1,0 +1,1 @@
+# create 4 digit pin code that is either string or int 2. create brute force algorithm that finds the correct pin code. 3. print that code
