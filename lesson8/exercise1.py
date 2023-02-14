@@ -10,3 +10,6 @@ while PASSWORD != input("Please enter password: "):
      print("wrong password")
 else:
     print("Hi Andrius")
+
+
+# padaryti uzduoti kai ivedamas useris ir paswordas per viena karta
