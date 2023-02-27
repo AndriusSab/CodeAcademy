@@ -1,4 +1,14 @@
-import numpy as np
+# import numpy as np
+# import panda as pd
+from random_word import RandomWords
 
-print(np.sqrt(9))
+words =[]
 
+r = RandomWords()
+for i in range (5):
+    word = r.get_random_word().upper()
+    words.append(word)
+
+words.sort()
+print(words)        
+    
