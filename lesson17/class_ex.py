@@ -28,12 +28,7 @@ print(person.days_until_bl_friday())
     
     
     # print(type(today))
-
-
-
     
-
-
 person = Person("Andrius", "Sabaliauskas")
 person2 = Person("Antanas", "Fontanas")
 
