@@ -18,45 +18,48 @@
 # print(multiply_numbs(5, 10))
 
 
-# list1 = [1, 2, 3]
-# list2 = [2, 2, 2]
+list1 = [1, 2, 3]
+list2 = [2, 2, 2]
 
-# result = map(lambda x, y: x + y, list1, list2)
+result = map(lambda x, y: x + y, list1, list2)
 
-# print(list(result))
+print(list(result))
 
 # list_nums = [1, 2, 3, 4]
 # square_cube_list = map(lambda x: [x**2, x**3], (list_nums))
 # print(list(square_cube_list))
 
 
-# import datetime
+import datetime
 
-# currentDateTime = datetime.datetime(2023, 3, 28)
-# print(currentDateTime)
-# year = lambda x: x.year
-# month = lambda x: x.month
-# day = lambda x: x.day
-# print("Year - ", year(currentDateTime))
-# print("Month - ", month(currentDateTime))
-# print("Day - ", day(currentDateTime))
+currentDateTime = datetime.datetime.now()
+print(currentDateTime)
+year = lambda x: x.year
+month = lambda x: x.month
+day = lambda x: x.day
+minutes = lambda x: x.minute
+second = lambda x: x.second
+print("Year - ", year(currentDateTime))
+print("Month - ", month(currentDateTime))
+print("Day - ", day(currentDateTime))
+print("Minutes - ", minutes(currentDateTime))
+print("Seconds - ", second(currentDateTime))
+
+# Listas = [("English", 88), ("Science", 90), ("Maths", 97), ("Social sciences", 82)]
+
+# sorted_list = sorted(Listas, key=lambda x: x[1], reverse=False)
+
+# print(sorted_list)
+
+# # Sorting the List of Tuples: [('Social sciences', 82), ('English', 88), ('Science', 90), ('Maths', 97)]
+# # Write a Python program to sort a list of dictionaries using Lambda.
+# original_list = [
+#     {"make": "Nokia", "model": 216, "color": "Black"},
+#     {"make": "Mi Max", "model": "2", "color": "Gold"},
+#     {"make": "Samsung", "model": 7, "color": "Blue"},
+# ]
 
 
-Listas = [("English", 88), ("Science", 90), ("Maths", 97), ("Social sciences", 82)]
+# sorted_dictionaries = sorted(original_list, key=lambda x: x["color"])
 
-sorted_list = sorted(Listas, key=lambda x: x[1], reverse=False)
-
-print(sorted_list)
-
-# Sorting the List of Tuples: [('Social sciences', 82), ('English', 88), ('Science', 90), ('Maths', 97)]
-# Write a Python program to sort a list of dictionaries using Lambda.
-original_list = [
-    {"make": "Nokia", "model": 216, "color": "Black"},
-    {"make": "Mi Max", "model": "2", "color": "Gold"},
-    {"make": "Samsung", "model": 7, "color": "Blue"},
-]
-
-
-sorted_dictionaries = sorted(original_list, key=lambda x: x["color"])
-
-print(list(sorted_dictionaries))
+# print(list(sorted_dictionaries))
